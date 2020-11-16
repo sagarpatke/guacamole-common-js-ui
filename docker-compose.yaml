@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  guacd:
+    image: guacamole/guacd
+    network_mode: host
+  vm:
+    image: danielguerra/ubuntu-xrdp
+    ports:
+      - 3389:3389
